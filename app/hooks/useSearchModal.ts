@@ -2,8 +2,8 @@ import {create} from 'zustand';
 
 interface SearchModalStore {
     isOpen: boolean;
-    onOpen: () => {};
-    onClose: () => {};
+    onOpen: () => void;
+    onClose: () => void;
 }
 
 const useSearchModal = create<SearchModalStore> ((set) => ({

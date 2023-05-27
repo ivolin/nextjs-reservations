@@ -1,9 +1,9 @@
-import {create} from 'zustand';
+import { create } from 'zustand';
 
 interface LoginModalStore {
     isOpen: boolean;
-    onOpen: () => {};
-    onClose: () => {};
+    onOpen: () => void;
+    onClose: () => void;
 }
 
 const useLoginModal = create<LoginModalStore> ((set) => ({
